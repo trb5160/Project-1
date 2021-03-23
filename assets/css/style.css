@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+    --blue: #0c3559;
+    --darkblue: #092640;
+    --seablue: #687b8c;
+    --lightseablue: #aab9bf;
+    --light: #f2f2f2;
+  }
+  
+  .custom-navbar {
+    background-color: var(--darkblue);
+    padding: 2% 0% 2% 0%;
+  }
+
+  .custom-navbar h1 {
+    font-size: 2.5rem;
+    color: var(--lightseablue);
+    text-align: center;
+    font-family: "Yeseva One";
+
+    
+  }
+  .custom-navbar a {
+    font-size: 1.5rem;
+    color: var(--lightseablue);
+  }
+  
+  .custom-navbar a:hover {
+    color: var(--light);
+  }
+  
+  .navbar-nav{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+  }
+
+  .navbar-nav a{
+    padding-left: 2%;
+  }
+  .container{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    padding-left: 4%;
+  }
+
+  .container h1{
+    font-family: "Yeseva One";
+  }
+
+  .custom-jumbotron {
+    background-color: var(--seablue);
+    color: var(--darkblue);
+    padding: 2% 0% 2% 0%;
+    border-bottom: 0% 0% 2% 0%;
+  }
+  
+  .custom-btn {
+    background-color: var(--light);
+    color: var(--blue);
+  }
+  
+  .custom-btn:hover {
+    background-color: var(--darkblue);
+    color: var(--light);
+  }
+  
+  .destination-form{
+    background-color: var(--darkblue);
+    display: block;
+    color: var(--lightseablue);
+    font-family: 'Roboto', sans-serif;
+    padding: 2% 4% 2% 4%;
+  }
+
+  .float{
+    float: left;
+    display: inline;
+  }
