@@ -6,7 +6,9 @@ var buttonEl = document.getElementById ("btn");
 var code;
 
 
-buttonEl.addEventListener("click", function(){
+buttonEl.addEventListener("click", function(event){
+    event.preventDefault();
+
     // function convertCountry(){
         toCountryEl.value = destinationEl.value;
         console.log(typeof parseInt(startAmountEl.value));

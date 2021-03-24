@@ -1,48 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!-- foreign exchange sample -->
-
-        <div class = "container">
-            <div class = "row">
-                <input type="text" id = "userDestination">
-                <button id = "btn">click</button>
-                <div class = "col-md-3">
-                    <label for="startCountry">Start Country</label>
-                    <input type="text" id = "fromCountry" name = "Country" placeholder="USA">
-                    <label for="amount">Amount</label>
-                    <input type="text" id = "startAmount" name = "Amount" placeholder="Start Amount">
-                </div>
-                <p class = "col-md-1">TO</p>
-                <div class = "col-md-3">
-                    <label for="destination">Destination</label>
-                    <input type="text" id = "toCountry" name = "Country" placeholder="Destination">
-                    <input type="text" id = "endAmount" name = "Amount" placeholder= "Converted Amount">
-                </div>
-            </div>
-
-            <div>
-                    
-            </div>
-        </div>
-        <script src="assets/js/app.js" async defer></script>
-        
-    </body>
-</html>
-=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,6 +12,22 @@
 </head>
 
 <body>
+    <!-- Christian -->
+    <input
+    id="userMap"
+    class="controls"
+    type="text"
+    placeholder="Search Box"
+  /> 
+  <div id="map"></div>
+
+  <script src="./assets/js/map.js"></script>
+      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+      <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSwTytzh16eE_L3_Kvor8h9ynC184P4Jk&callback=initAutocomplete&libraries=places&v=weekly"
+    async
+  ></script>
+
 
   <nav class="custom-navbar">
     <h1>Get Out of Town: International Travel Guide</h1>
@@ -86,7 +57,7 @@
 
   <form id="destination-form" class="destination-form" > 
 
-    <div style='float:left; width:30%'>   
+    <!-- <div style='float:left; width:30%'>   
       <label for="Location">Location:</label>
       <input type="text" placeholder="Where from?">
     </div>
@@ -98,21 +69,38 @@
 
     <div>
       <input type="submit" value="Search">
+    </div> -->
+
+    <!-- Carolyn foreign exchange sample -->
+    <div class = "container">
+      <div class = "row">
+
+        <input type="text" id = "userDestination">
+
+        <button id = "btn">click</button>
+
+        <div class = "col-md-3">
+            <label for="startCountry">Start Country</label>
+            <input type="text" id = "fromCountry" name = "Country" placeholder="USA">
+            <label for="amount">Amount</label>
+            <input type="text" id = "startAmount" name = "Amount" placeholder="Start Amount">
+        </div>
+
+        <p class = "col-md-1">TO</p>
+
+        <div class = "col-md-3">
+            <label for="destination">Destination</label>
+            <input type="text" id = "toCountry" name = "Country" placeholder="Destination">
+            <input type="text" id = "endAmount" name = "Amount" placeholder= "Converted Amount">
+      </div>
     </div>
 
   </form>
 
-  <section>
-    <div>
-      <img src="assets/images/currency.jpg">
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
-    </div>
-  </section>
-
 
 </body>
 
+<script src="./assets/js/forex.js" async defer></script>
+<!-- <script src="./assets/js/map.js"></script> -->
+
 </html>
->>>>>>> 6d68fa0c9c473c9aad71844ee78a173642b2740f
