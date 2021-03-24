@@ -14,10 +14,10 @@
 <body>
     <!-- Christian -->
     <input
-    id="userMap"
+    id = "userMap"
     class="controls"
     type="text"
-    placeholder="Search Box"
+    placeholder="Destination"
   /> 
   <div id="map"></div>
 
@@ -72,26 +72,28 @@
     </div> -->
 
     <!-- Carolyn foreign exchange sample -->
-    <div class = "container">
+    <div class = "container forex">
       <div class = "row">
-
-        <input type="text" id = "userDestination">
-
-        <button id = "btn">click</button>
-
-        <div class = "col-md-3">
-            <label for="startCountry">Start Country</label>
-            <input type="text" id = "fromCountry" name = "Country" placeholder="USA">
-            <label for="amount">Amount</label>
-            <input type="text" id = "startAmount" name = "Amount" placeholder="Start Amount">
+        <div class = "question">
+           <label for="text" id = "question">Where are you going?</label>
+        <input type="text" id = "userDestination" class = "country">
+        <button id = "btn">Search</button>
         </div>
+       
+        <div class = "search">
+            <label for="text">Home:</label>
+            <p id = "fromCountry" class = "inline"> USA    $</p>
+            <!-- <input type="text" id = "fromCountry" class = "country" name = "Country" placeholder="USA"> -->
+            <input type="text" id = "startAmount" class = "country"name = "Amount" placeholder="Start Amount ($)">
+        </div>
+       
+        <p class = "col-md-1 to">TO</p>
 
-        <p class = "col-md-1">TO</p>
-
-        <div class = "col-md-3">
-            <label for="destination">Destination</label>
-            <input type="text" id = "toCountry" name = "Country" placeholder="Destination">
-            <input type="text" id = "endAmount" name = "Amount" placeholder= "Converted Amount">
+        <div class = "search">
+            <label for="text">Destination:</label>
+            <p id = "toCountry" class = "inline"></p>
+            <!-- <input type="text" id = "toCountry" class = "country" name = "Country" placeholder="Destination"> -->
+            <input type="text" id = "endAmount" class = "country" name = "Amount" placeholder= "Converted Amount" disabled>
       </div>
     </div>
 

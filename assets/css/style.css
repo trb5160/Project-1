@@ -11,7 +11,9 @@
     --lightseablue: #aab9bf;
     --light: #f2f2f2;
   }
-  
+  body{
+    background-color:var(--darkblue);
+  }
   .custom-navbar {
     background-color: var(--darkblue);
     padding: 2% 0% 2% 0%;
@@ -57,8 +59,11 @@
   .custom-jumbotron {
     background-color: var(--seablue);
     color: var(--darkblue);
-    padding: 2% 0% 2% 0%;
-    border-bottom: 0% 0% 2% 0%;
+    padding: 1% 0% 1% 0%;
+    border-bottom: 3px;
+    border-top:3px;
+    border-style: outset;
+    border-color: var(--blue);
   }
   
   .custom-btn {
@@ -84,19 +89,23 @@
     display: inline;
   }
 
+  
 /*Map CSS*/
 
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
        #map {
-        height: 100%;
-        width: 100%;
+        height: 50%;
+        width: 60%;
+        border: 5px solid var(--blue);
+        border-style: outset;
+        position:absolute;
+        top:60%;
       }
       
       /* Optional: Makes the sample page fill the window. */
-     html,
      body {
-       height: 100%;
+       height: 10%;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -119,7 +128,7 @@
       #map #infowindow-content {
         display: inline;
       }
-      
+    
       .userDestination-card {
         margin: 10px 10px 0 0;
         border-radius: 2px 0 0 2px;
@@ -157,7 +166,15 @@
         text-overflow: ellipsis;
         width: 400px;
       }
-      
+      #userMap{
+        color:var(--darkblue);
+        font-size: 1em;
+        font-weight:5px;
+        border: 1px solid var(--blue);
+        border-style: outset;
+        height:30px;
+        width: 200px;
+      }
       #userDestination-input:focus {
         border-color: #4d90fe;
       }
@@ -174,3 +191,74 @@
         width: 345px;
       }
       span[style*='top: -999px']{display: none;}
+
+      /* #userMap{
+        font-color:var(--darkblue);
+        font-weight:3px;
+        border: 3px solid var(--blue);
+        border-style: outset;
+        height:50px;
+        width: 400px;
+      } */
+      
+      /* forex style */
+      .forex{
+        border: 5px solid var(--blue);
+        border-style: outset;
+        position:absolute;
+        right:0%;
+        top:60%;
+        margin: 0px 15px;
+        height: 300px;
+        width: 525px;
+        padding:5px;
+      }
+      label{
+        color: var(--seablue);
+        font-size:1.5em;
+      }
+      .country{
+        color:var(--darkblue);
+        font-size: 1em;
+        font-weight:5px;
+        border: 3px solid var(--blue);
+        border-style: outset;
+        height:30px;
+        width: 200px;
+      }
+
+      hr{
+        color:var(--blue);
+        box-shadow: var(--seablue);
+      }
+      
+      .to{
+        color: var(--seablue);
+      }
+      #question{
+      font-size: 1.5em;
+      color:var(--lightseablue);
+      padding:0px;
+      margin:5px;
+    }
+    .question{
+      border:none;
+      margin: 5px 0px 50px 0px;
+    }
+    #btn{
+      background-color: var(--blue);
+      color: var(--lightseablue);
+    }
+    .inline{
+      display:inline;
+      font-size: 1.5em;
+      color:var(--seablue);
+      padding:7px;
+    }
+    #endAmount{
+      background-color: white;
+    }
+    input{
+      font-size:1em;
+      color:var(--darkblue);
+    }

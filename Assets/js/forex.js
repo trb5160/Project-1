@@ -3,6 +3,7 @@ var toCountryEl = document.querySelector ("#toCountry");
 var startAmountEl = document.getElementById ("startAmount");
 var endAmountEl = document.getElementById ("endAmount");
 var buttonEl = document.getElementById ("btn");
+var fromCountryEl = document.querySelector("#fromCountry");
 var code;
 
 
@@ -10,7 +11,8 @@ buttonEl.addEventListener("click", function(event){
     event.preventDefault();
 
     // function convertCountry(){
-        toCountryEl.value = destinationEl.value;
+        fromCountryEl.textContent = "USA";
+        toCountryEl.textContent = destinationEl.value;
         console.log(typeof parseInt(startAmountEl.value));
     //put search country into input Destination
     if(typeof parseInt(startAmountEl.value) !== "number")return;
