@@ -4,6 +4,7 @@ var startAmountEl = document.getElementById ("startAmount");
 var endAmountEl = document.getElementById ("endAmount");
 var buttonEl = document.getElementById ("btn");
 var fromCountryEl = document.querySelector("#fromCountry");
+var conversionEl = document.getElementById("conversion");
 var code;
 
 
@@ -37,7 +38,7 @@ buttonEl.addEventListener("click", function(event){
         .then(function(data){
             console.log(data);
             endAmountEl.value =`${symbol}${data.conversion_result}`;
-        });
+            
+        })
     })
-
 });

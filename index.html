@@ -36,13 +36,13 @@
       <div class="navbar-nav">
         <a href="#destination-form">Destination</a>
         <a class="" href="#">Covid-19 Info</a>
-        <a class="" href="#">Currency Info</a>
+        <a href="#currencyInfo">Currency Info</a>
       </div>
     </div>
   </nav>
 
   <section class="jumbotron jumbotron-fluid custom-jumbotron">
-    <div class="container">
+    <div class="container" id = "jumbotron">
       <h1>
         Welcome to our site!
       </h1>
@@ -72,11 +72,11 @@
     </div> -->
 
     <!-- Carolyn foreign exchange sample -->
-    <div class = "container forex">
+    <div class = "container forex" id = "currencyInfo">
       <div class = "row">
         <div class = "question">
            <label for="text" id = "question">Where are you going?</label>
-        <input type="text" id = "userDestination" class = "country">
+        <input type="text" id = "userDestination" class = "country" placeholder="Country">
         <button id = "btn">Search</button>
         </div>
        
@@ -94,6 +94,7 @@
             <p id = "toCountry" class = "inline"></p>
             <!-- <input type="text" id = "toCountry" class = "country" name = "Country" placeholder="Destination"> -->
             <input type="text" id = "endAmount" class = "country" name = "Amount" placeholder= "Converted Amount" disabled>
+            <p id = "conversion"></p>
       </div>
     </div>
 

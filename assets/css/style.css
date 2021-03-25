@@ -100,7 +100,7 @@
         border: 5px solid var(--blue);
         border-style: outset;
         position:absolute;
-        top:60%;
+        top:65%;
       }
       
       /* Optional: Makes the sample page fill the window. */
@@ -207,10 +207,10 @@
         border-style: outset;
         position:absolute;
         right:0%;
-        top:60%;
+        top:65%;
         margin: 0px 15px;
         height: 300px;
-        width: 525px;
+        width: 500px;
         padding:5px;
       }
       label{
@@ -225,11 +225,8 @@
         border-style: outset;
         height:30px;
         width: 200px;
-      }
-
-      hr{
-        color:var(--blue);
-        box-shadow: var(--seablue);
+        border-radius: 5px;
+        background-color: var(--light);
       }
       
       .to{
@@ -256,9 +253,211 @@
       padding:7px;
     }
     #endAmount{
-      background-color: white;
+      background-color: var(--light);
     }
     input{
       font-size:1em;
       color:var(--darkblue);
+    }
+    
+
+
+
+
+    /* Media Queries */
+    @media screen and (max-width: 1360px){
+      .forex{
+        position:absolute;
+        right:0%;
+        top:65%;
+        margin: 0px 20px;
+        height: 300px;
+        width: 500px;
+        padding:5px;
+      }
+      #map {
+        height: 50%;
+        width: 50%;
+        position:absolute;
+        top:65%;
+        margin:0px 30px;
+      }
+    }
+
+    @media screen and (max-width: 1176px){
+      .forex{
+        position:absolute;
+        right:0%;
+        top:65%;
+        margin: 0px 20px;
+        height: 300px;
+        width: 450px;
+        padding:5px;
+      }
+      #map {
+        height: 50%;
+        width: 45%;
+        position:absolute;
+        top:65%;
+        margin:0px 30px;
+      }
+    }
+
+    @media screen and (max-width: 1060px){
+      .forex{
+        position:absolute;
+        top:50%;
+        left:-30px;
+        align-self: center;
+        height: 150px;
+        width: 100%;
+        padding:5px;
+        text-align: center;
+      }
+      .inline{
+        display:inline;
+        font-size: 1em;
+        color:var(--seablue);
+        padding:0px;
+      }
+      #endAmount{
+        background-color: var(--light);
+      }
+      input{
+        font-size:.8em;
+        color:var(--darkblue);
+      }
+      label{
+        color: var(--seablue);
+        font-size:1em;
+      }
+      .country{
+        color:var(--darkblue);
+        font-size: .8em;
+        font-weight:5px;
+        border: 3px solid var(--blue);
+        border-style: outset;
+        height:20px;
+        width: 150px;
+        border-radius: 5px;
+        background-color: var(--light);
+      }
+      .question{
+        margin:10px 0px 20px 0px;
+      }
+      .custom-jumbotron {
+        padding: 5px;
+      }
+      p.intro{
+        padding:5px;
+        margin:5px;
+      }
+      h1{
+        padding:5px;
+        margin:5px;
+      }
+      .to{
+        margin:2px;
+      }
+      #map {
+        height: 75%;
+        width: 100%;
+        position:absolute;
+        top:80%;
+        margin:0px;
+      }
+    }
+    @media screen and (max-width: 790px){
+      .forex{
+        position:absolute;
+        top:55%;
+        left:-30px;
+        align-self: center;
+        height: 150px;
+        width: 100%;
+        padding:5px;
+        text-align: center;
+      }
+      #map {
+        height: 75%;
+        width: 100%;
+        position:absolute;
+        top:85%;
+        margin:0px;
+      }
+    }
+    @media screen and (max-width: 698px){
+      .forex{
+        position:absolute;
+        top:22%;
+        left:-30px;
+        align-self: center;
+        height: 150px;
+        width: 100%;
+        padding:5px;
+        text-align: center;
+        border: 3px solid var(--blue);
+      }
+      #map {
+        height: 75%;
+        width: 100%;
+        position:absolute;
+        top:52%;
+        margin:0px;
+      }
+      .custom-jumbotron {
+        display:none;
+      }
+      .custom-navbar h1 {
+        font-size: 2em;
+    }
+      .custom-navbar a{
+        font-size:1em;
+      }
+    }
+
+    @media screen and (max-width: 375px){
+      .forex{
+        position:absolute;
+        top:20%;
+        left:-30px;
+        align-self: center;
+        height: 150px;
+        width: 100%;
+        padding:5px;
+        text-align: center;
+        border: 3px solid var(--blue);
+      }
+      #map {
+        height: 50%;
+        width: 100%;
+        position:absolute;
+        top:50%;
+        margin:2px;
+      }
+      .custom-jumbotron {
+        display:none;
+      }
+      .custom-navbar h1 {
+        font-size: 1.3em;
+    }
+      .custom-navbar a{
+        font-size:.8em;
+      }
+      #question{
+        font-size: 1em;
+      }
+      .country{
+        width:100px;
+        height:15px;
+      }
+      .to{
+        font-size: .8em;
+      }
+      label{
+        font-size: .8em;
+      }
+      #btn{
+        width:100px;
+      }
     }
