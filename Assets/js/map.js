@@ -11,8 +11,8 @@ let userMap;
 
 function initAutocomplete() {
     const map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: -33.8688, lng: 151.2195 },
-      zoom: 13,
+      center: { lat: 40.730610, lng: -73.935242 },
+      zoom: 11,
       mapTypeId: "roadmap",
     });
     // Create the search box and link it to the UI element.

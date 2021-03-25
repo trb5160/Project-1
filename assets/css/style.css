@@ -461,3 +461,49 @@
         width:100px;
       }
     }
+
+    @media screen and (max-width: 1060px)(max-height:1440){
+      .forex{
+        position:absolute;
+        top:10%;
+        left:-30px;
+        align-self: center;
+        height: 150px;
+        width: 100%;
+        padding:5px;
+        text-align: center;
+        border: 3px solid var(--blue);
+      }
+      #map {
+        height: 50%;
+        width: 100%;
+        position:absolute;
+        top:50%;
+        margin:2px;
+      }
+      .custom-jumbotron {
+        display:none;
+      }
+      .custom-navbar h1 {
+        font-size: 1.3em;
+    }
+      .custom-navbar a{
+        font-size:.8em;
+      }
+      #question{
+        font-size: 1em;
+      }
+      .country{
+        width:100px;
+        height:15px;
+      }
+      .to{
+        font-size: .8em;
+      }
+      label{
+        font-size: .8em;
+      }
+      #btn{
+        width:100px;
+      }
+    }
