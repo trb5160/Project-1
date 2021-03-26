@@ -38,7 +38,7 @@ buttonEl.addEventListener("click", function(event){
         .then(function(data){
             console.log(data);
             endAmountEl.value =`${symbol}${data.conversion_result}`;
-            
+            conversionEl.textContent = (`$${startAmountEl.value} USD is ${endAmountEl.value} in ${destinationEl.value}`);
         })
     })
 });

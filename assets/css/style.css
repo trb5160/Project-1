@@ -13,6 +13,7 @@
   }
   body{
     background-color:var(--darkblue);
+    height:100%;
   }
   .custom-navbar {
     background-color: var(--darkblue);
@@ -38,19 +39,22 @@
   }
   
   .navbar-nav{
+    display:flex;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: small;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .navbar-nav a{
     padding-left: 2%;
   }
-  .container{
+  /* .container{
     font-family: 'Roboto', sans-serif;
     text-align: left;
     padding-left: 4%;
-  }
+  } */
 
   .container h1{
     font-family: "Yeseva One";
@@ -59,11 +63,13 @@
   .custom-jumbotron {
     background-color: var(--seablue);
     color: var(--darkblue);
-    padding: 1% 0% 1% 0%;
+    padding: 1% 0% 1% 1%;
     border-bottom: 3px;
     border-top:3px;
     border-style: outset;
     border-color: var(--blue);
+    font-size: 1em;
+    font-stretch: wider;
   }
   
   .custom-btn {
@@ -76,18 +82,6 @@
     color: var(--light);
   }
   
-  .destination-form{
-    background-color: var(--darkblue);
-    display: block;
-    color: var(--lightseablue);
-    font-family: 'Roboto', sans-serif;
-    padding: 2% 4% 2% 4%;
-  }
-
-  .float{
-    float: left;
-    display: inline;
-  }
 
   
 /*Map CSS*/
@@ -95,12 +89,13 @@
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
        #map {
-        height: 50%;
+        height: 63%;
         width: 60%;
         border: 5px solid var(--blue);
         border-style: outset;
         position:absolute;
-        top:65%;
+      
+        margin-left:5px
       }
       
       /* Optional: Makes the sample page fill the window. */
@@ -191,31 +186,25 @@
         width: 345px;
       }
       span[style*='top: -999px']{display: none;}
-
-      /* #userMap{
-        font-color:var(--darkblue);
-        font-weight:3px;
-        border: 3px solid var(--blue);
-        border-style: outset;
-        height:50px;
-        width: 400px;
-      } */
       
       /* forex style */
+      /* main{
+        display:flex;
+      } */
       .forex{
         border: 5px solid var(--blue);
         border-style: outset;
+        justify-content:start;
+        margin: 0px 5px;
         position:absolute;
-        right:0%;
-        top:65%;
-        margin: 0px 15px;
-        height: 300px;
-        width: 500px;
+        right:1%;
+        height: 58%;
+        width: 35%;
         padding:5px;
       }
       label{
         color: var(--seablue);
-        font-size:1.5em;
+        font-size:1.8em;
       }
       .country{
         color:var(--darkblue);
@@ -233,22 +222,24 @@
         color: var(--seablue);
       }
       #question{
-      font-size: 1.5em;
+      font-size: 2em;
       color:var(--lightseablue);
       padding:0px;
       margin:5px;
     }
     .question{
       border:none;
-      margin: 5px 0px 50px 0px;
+      margin: 15px 0px 50px 0px;
     }
     #btn{
       background-color: var(--blue);
       color: var(--lightseablue);
+      height:40px;
+      width:65px;
     }
     .inline{
       display:inline;
-      font-size: 1.5em;
+      font-size: 1.8em;
       color:var(--seablue);
       padding:7px;
     }
@@ -259,60 +250,144 @@
       font-size:1em;
       color:var(--darkblue);
     }
+    #conversion{
+      font-size:2em;
+      color:var(--lightseablue);
+      text-align: center;
+      margin:30px 0px 0px 0;
+    }
     
+/* covid 19 */
 
+.embed-responsive-item {
+  position: absolute; 
+  top:1%;
+  padding-bottom:1%; 
+  height: 50%; 
+  max-width: 100%;
+}
+.embed-responsive-item iframe, .embed-responsive-item object, .embed-responsive-item iframe{
+  position: absolute;
+  top: 25%; 
+  right:-6px; 
+  width: 1700px; 
+  height: 600px; 
+  margin:8%;
+} 
+
+  small{position: absolute; 
+    z-index:40; 
+    bottom: 0; 
+    margin-bottom: -15px;
+  }
 
 
 
     /* Media Queries */
+    @media screen and (max-width: 1785px){
+      .forex{
+        border: 5px solid var(--blue);
+        border-style: outset;
+        margin: 0px 15px;
+        height: 400px;
+        width: 600px;
+        padding:5px;
+      }
+      #map {
+        height: 63%;
+        width: 60%;
+        border: 5px solid var(--blue);
+        border-style: outset;
+        margin-left:20px
+      }
+      .embed-container {
+        position: relative; 
+        padding-bottom: 80%; 
+        height: 0; 
+        max-width: 100%;
+      }
+      .embed-container iframe, .embed-container object, .embed-container iframe{
+        position: absolute; 
+        top: 25%; 
+        right:-28px; 
+        width: 1700px; 
+        height: 600px; 
+        margin:8%;
+      } 
+      
+        small{position: absolute; 
+          z-index:40; 
+          bottom: 0; 
+          margin-bottom: -15px;
+        }
+    }
+
+    @media screen and (max-width: 1735px){
+      .forex{
+        border: 5px solid var(--blue);
+        border-style: outset;
+        margin: 0px 30px 0px 15px;
+        height: 400px;
+        width: 550px;
+        padding:5px;
+      }
+      #map {
+        height: 63%;
+        width: 55%;
+        border: 5px solid var(--blue);
+        border-style: outset;
+        margin-left:20px
+      }
+      .embed-container {
+        position: relative; 
+        padding-bottom: 80%; 
+        height: 0; 
+        max-width: 100%;
+      }
+      .embed-container iframe, .embed-container object, .embed-container iframe{
+        position: absolute; 
+        top: 25%; 
+        right:-4px; 
+        width: 1500px; 
+        height: 600px; 
+        margin:4%;
+      } 
+      
+        small{position: absolute; 
+          z-index:40; 
+          bottom: 0; 
+          margin-bottom: -15px;
+        }
+    }
+    @media screen and (max-width: 1556px){
+      
+      .embed-container {
+        position: relative; 
+        padding-bottom: 80%; 
+        height: 0; 
+        max-width: 100%;
+      }
+      .embed-container iframe, .embed-container object, .embed-container iframe{
+        position: absolute; 
+        top: 25%; 
+        right:-30px; 
+        width: 1300px; 
+        height: 600px; 
+        margin:8%;
+      } 
+      
+        small{position: absolute; 
+          z-index:40; 
+          bottom: 0; 
+          margin-bottom: -15px;
+        }
+    }
     @media screen and (max-width: 1360px){
       .forex{
-        position:absolute;
-        right:0%;
-        top:65%;
         margin: 0px 20px;
-        height: 300px;
-        width: 500px;
+        height: 45%;
+        width: 35%;
         padding:5px;
-      }
-      #map {
-        height: 50%;
-        width: 50%;
-        position:absolute;
-        top:65%;
-        margin:0px 30px;
-      }
-    }
-
-    @media screen and (max-width: 1176px){
-      .forex{
-        position:absolute;
-        right:0%;
-        top:65%;
-        margin: 0px 20px;
-        height: 300px;
-        width: 450px;
-        padding:5px;
-      }
-      #map {
-        height: 50%;
-        width: 45%;
-        position:absolute;
-        top:65%;
-        margin:0px 30px;
-      }
-    }
-
-    @media screen and (max-width: 1060px){
-      .forex{
-        position:absolute;
-        top:50%;
-        left:-30px;
-        align-self: center;
-        height: 150px;
-        width: 100%;
-        padding:5px;
-        text-align: center;
       }
       .inline{
         display:inline;
@@ -360,50 +435,174 @@
         margin:2px;
       }
       #map {
-        height: 75%;
+        height: 45%;
+        width: 55%;
+        margin:0px 10px;
+      }
+      .embed-container {
+        position: relative; 
+        padding-bottom: 80%; 
+        height: 0; 
+        max-width: 100%;
+      }
+      .embed-container iframe, .embed-container object, .embed-container iframe{
+        position: absolute; 
+        top: 20%; 
+        right:-30px; 
+        width: 1100px; 
+        height: 600px; 
+        margin:8%;
+      } 
+      
+        small{position: absolute; 
+          z-index:40; 
+          bottom: 0; 
+          margin-bottom: -15px;
+        }
+    }
+
+    @media screen and (max-width: 1176px){
+      .forex{
+        margin: 0px 20px;
+        height: 40%;
+        width: 40%;
+        padding:5px;
+      }
+      #map {
+        height: 45%;
+        width: 55%;
+      }
+      .embed-container {
+        position: relative; 
+        padding-bottom: 80%; 
+        height: 0; 
+        max-width: 100%;
+      }
+      .embed-container iframe, .embed-container object, .embed-container iframe{
+        position: absolute; 
+        top: 20%; 
+        right:-30px; 
+        width: 1000px; 
+        height: 600px; 
+        margin:8%;
+      } 
+      
+        small{position: absolute; 
+          z-index:40; 
+          bottom: 0; 
+          margin-bottom: -15px;
+        }
+    }
+
+    @media screen and (max-width: 1064px){
+      .forex{
+        align-self: center;
+        height: 250px;
         width: 100%;
-        position:absolute;
-        top:80%;
+        padding:5px;
+        text-align: center;
+        position:relative;
+        top:5%;
+        left:1%;
         margin:0px;
       }
-    }
-    @media screen and (max-width: 790px){
-      .forex{
+      #map {
+        height: 50%;
+        width: 100%;
+        margin:0px;
         position:absolute;
         top:55%;
-        left:-30px;
+      }
+    
+      .inline{
+        display:inline;
+        font-size: 1em;
+        color:var(--seablue);
+        padding:0px;
+      }
+      #endAmount{
+        background-color: var(--light);
+      }
+      input{
+        font-size:.8em;
+        color:var(--darkblue);
+      }
+      label{
+        color: var(--seablue);
+        font-size:1em;
+      }
+      .country{
+        color:var(--darkblue);
+        font-size: .8em;
+        font-weight:5px;
+        border: 3px solid var(--blue);
+        border-style: outset;
+        height:20px;
+        width: 150px;
+        border-radius: 5px;
+        background-color: var(--light);
+      }
+      .question{
+        margin:10px 0px 20px 0px;
+      }
+      .custom-jumbotron {
+        padding: 5px;
+      }
+      p.intro{
+        padding:5px;
+        margin:5px;
+      }
+      h1{
+        padding:5px;
+        margin:5px;
+      }
+      .to{
+        margin:2px;
+      }
+      
+      .embed-container iframe, .embed-container object, .embed-container iframe{
+        position: absolute; 
+        top: 58%; 
+        right:-30px; 
+        width: 875px; 
+        height: 600px; 
+        margin:8%;
+      } 
+      #conversion{
+        display:none;
+      }
+    }
+    @media screen and (max-width: 760px){
+      .forex{
         align-self: center;
-        height: 150px;
+        height: 300px;
         width: 100%;
         padding:5px;
         text-align: center;
       }
       #map {
-        height: 75%;
+        height: 50%;
         width: 100%;
-        position:absolute;
-        top:85%;
         margin:0px;
+        position:absolute;
+        top:60%;
       }
     }
     @media screen and (max-width: 698px){
       .forex{
-        position:absolute;
-        top:22%;
-        left:-30px;
         align-self: center;
-        height: 150px;
+        height: 300px;
         width: 100%;
         padding:5px;
         text-align: center;
         border: 3px solid var(--blue);
       }
       #map {
-        height: 75%;
+        height: 50%;
         width: 100%;
-        position:absolute;
-        top:52%;
         margin:0px;
+        position:absolute;
+        top:40%;
       }
       .custom-jumbotron {
         display:none;
@@ -418,9 +617,6 @@
 
     @media screen and (max-width: 375px){
       .forex{
-        position:absolute;
-        top:20%;
-        left:-30px;
         align-self: center;
         height: 150px;
         width: 100%;
@@ -431,8 +627,6 @@
       #map {
         height: 50%;
         width: 100%;
-        position:absolute;
-        top:50%;
         margin:2px;
       }
       .custom-jumbotron {
@@ -462,24 +656,26 @@
       }
     }
 
-    @media screen and (max-width: 1060px)(max-height:1440){
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
       .forex{
-        position:absolute;
-        top:10%;
-        left:-30px;
         align-self: center;
-        height: 150px;
+        height: 200px;
         width: 100%;
         padding:5px;
         text-align: center;
         border: 3px solid var(--blue);
+        margin:0px;
       }
       #map {
+        position:absolute;
+        top:52%;
         height: 50%;
         width: 100%;
-        position:absolute;
-        top:50%;
-        margin:2px;
+        align-self: center;
+        margin:0px;
       }
       .custom-jumbotron {
         display:none;
@@ -507,3 +703,31 @@
         width:100px;
       }
     }
+    @media only screen 
+    and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      .forex{
+        align-self: center;
+        height: 150px;
+        width: 100%;
+        padding:5px;
+        text-align: center;
+        border: 3px solid var(--blue);
+        margin:0px;
+      }
+      #map {
+        position:absolute;
+        top:400px;
+        height: 35%;
+        width: 100%;
+        align-self: center;
+        margin:0px;
+      }
+      .custom-jumbotron {
+        display:none;
+      }
+      .custom-navbar h1 {
+        font-size: .8em;
+  }
