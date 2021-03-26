@@ -1,0 +1,509 @@
+/* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} */
+
+:root {
+    --blue: #0c3559;
+    --darkblue: #092640;
+    --seablue: #687b8c;
+    --lightseablue: #aab9bf;
+    --light: #f2f2f2;
+  }
+  body{
+    background-color:var(--darkblue);
+  }
+  .custom-navbar {
+    background-color: var(--darkblue);
+    padding: 2% 0% 2% 0%;
+    z-index: 1;
+  }
+
+  .custom-navbar h1 {
+    font-size: 2.5rem;
+    color: var(--lightseablue);
+    text-align: center;
+    font-family: "Yeseva One";
+
+    
+  }
+  .custom-navbar a {
+    font-size: 1.5rem;
+    color: var(--lightseablue);
+  }
+  
+  .custom-navbar a:hover {
+    color: var(--light);
+  }
+  
+  .navbar-nav{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+  }
+
+  .navbar-nav a{
+    padding-left: 2%;
+  }
+  .container{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    padding-left: 4%;
+  }
+
+  .container h1{
+    font-family: "Yeseva One";
+  }
+
+  .custom-jumbotron {
+    background-color: var(--seablue);
+    color: var(--darkblue);
+    padding: 1% 0% 1% 0%;
+    border-bottom: 3px;
+    border-top:3px;
+    border-style: outset;
+    border-color: var(--blue);
+  }
+  
+  .custom-btn {
+    background-color: var(--light);
+    color: var(--blue);
+  }
+  
+  .custom-btn:hover {
+    background-color: var(--darkblue);
+    color: var(--light);
+  }
+  
+  .destination-form{
+    background-color: var(--darkblue);
+    display: block;
+    color: var(--lightseablue);
+    font-family: 'Roboto', sans-serif;
+    padding: 2% 4% 2% 4%;
+  }
+
+  .float{
+    float: left;
+    display: inline;
+  }
+
+  
+/*Map CSS*/
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        height: 50%;
+        width: 60%;
+        border: 5px solid var(--blue);
+        border-style: outset;
+        position:absolute;
+        top:65%;
+      }
+      
+      /* Optional: Makes the sample page fill the window. */
+     body {
+       height: 10%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      
+      #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+      
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+      
+      #infowindow-content {
+        display: none;
+      }
+      
+      #map #infowindow-content {
+        display: inline;
+      }
+    
+      .userDestination-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+      }
+      
+      #userDestination-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+      
+      .userDestination-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+      
+      .userDestination-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      
+      #userDestination-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+      }
+      #userMap{
+        color:var(--darkblue);
+        font-size: 1em;
+        font-weight:5px;
+        border: 1px solid var(--blue);
+        border-style: outset;
+        height:30px;
+        width: 200px;
+      }
+      #userDestination-input:focus {
+        border-color: #4d90fe;
+      }
+      
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+      
+      #target {
+        width: 345px;
+      }
+      span[style*='top: -999px']{display: none;}
+
+      /* #userMap{
+        font-color:var(--darkblue);
+        font-weight:3px;
+        border: 3px solid var(--blue);
+        border-style: outset;
+        height:50px;
+        width: 400px;
+      } */
+      
+      /* forex style */
+      .forex{
+        border: 5px solid var(--blue);
+        border-style: outset;
+        position:absolute;
+        right:0%;
+        top:65%;
+        margin: 0px 15px;
+        height: 300px;
+        width: 500px;
+        padding:5px;
+      }
+      label{
+        color: var(--seablue);
+        font-size:1.5em;
+      }
+      .country{
+        color:var(--darkblue);
+        font-size: 1em;
+        font-weight:5px;
+        border: 3px solid var(--blue);
+        border-style: outset;
+        height:30px;
+        width: 200px;
+        border-radius: 5px;
+        background-color: var(--light);
+      }
+      
+      .to{
+        color: var(--seablue);
+      }
+      #question{
+      font-size: 1.5em;
+      color:var(--lightseablue);
+      padding:0px;
+      margin:5px;
+    }
+    .question{
+      border:none;
+      margin: 5px 0px 50px 0px;
+    }
+    #btn{
+      background-color: var(--blue);
+      color: var(--lightseablue);
+    }
+    .inline{
+      display:inline;
+      font-size: 1.5em;
+      color:var(--seablue);
+      padding:7px;
+    }
+    #endAmount{
+      background-color: var(--light);
+    }
+    input{
+      font-size:1em;
+      color:var(--darkblue);
+    }
+    
+
+
+
+
+    /* Media Queries */
+    @media screen and (max-width: 1360px){
+      .forex{
+        position:absolute;
+        right:0%;
+        top:65%;
+        margin: 0px 20px;
+        height: 300px;
+        width: 500px;
+        padding:5px;
+      }
+      #map {
+        height: 50%;
+        width: 50%;
+        position:absolute;
+        top:65%;
+        margin:0px 30px;
+      }
+    }
+
+    @media screen and (max-width: 1176px){
+      .forex{
+        position:absolute;
+        right:0%;
+        top:65%;
+        margin: 0px 20px;
+        height: 300px;
+        width: 450px;
+        padding:5px;
+      }
+      #map {
+        height: 50%;
+        width: 45%;
+        position:absolute;
+        top:65%;
+        margin:0px 30px;
+      }
+    }
+
+    @media screen and (max-width: 1060px){
+      .forex{
+        position:absolute;
+        top:50%;
+        left:-30px;
+        align-self: center;
+        height: 150px;
+        width: 100%;
+        padding:5px;
+        text-align: center;
+      }
+      .inline{
+        display:inline;
+        font-size: 1em;
+        color:var(--seablue);
+        padding:0px;
+      }
+      #endAmount{
+        background-color: var(--light);
+      }
+      input{
+        font-size:.8em;
+        color:var(--darkblue);
+      }
+      label{
+        color: var(--seablue);
+        font-size:1em;
+      }
+      .country{
+        color:var(--darkblue);
+        font-size: .8em;
+        font-weight:5px;
+        border: 3px solid var(--blue);
+        border-style: outset;
+        height:20px;
+        width: 150px;
+        border-radius: 5px;
+        background-color: var(--light);
+      }
+      .question{
+        margin:10px 0px 20px 0px;
+      }
+      .custom-jumbotron {
+        padding: 5px;
+      }
+      p.intro{
+        padding:5px;
+        margin:5px;
+      }
+      h1{
+        padding:5px;
+        margin:5px;
+      }
+      .to{
+        margin:2px;
+      }
+      #map {
+        height: 75%;
+        width: 100%;
+        position:absolute;
+        top:80%;
+        margin:0px;
+      }
+    }
+    @media screen and (max-width: 790px){
+      .forex{
+        position:absolute;
+        top:55%;
+        left:-30px;
+        align-self: center;
+        height: 150px;
+        width: 100%;
+        padding:5px;
+        text-align: center;
+      }
+      #map {
+        height: 75%;
+        width: 100%;
+        position:absolute;
+        top:85%;
+        margin:0px;
+      }
+    }
+    @media screen and (max-width: 698px){
+      .forex{
+        position:absolute;
+        top:22%;
+        left:-30px;
+        align-self: center;
+        height: 150px;
+        width: 100%;
+        padding:5px;
+        text-align: center;
+        border: 3px solid var(--blue);
+      }
+      #map {
+        height: 75%;
+        width: 100%;
+        position:absolute;
+        top:52%;
+        margin:0px;
+      }
+      .custom-jumbotron {
+        display:none;
+      }
+      .custom-navbar h1 {
+        font-size: 2em;
+    }
+      .custom-navbar a{
+        font-size:1em;
+      }
+    }
+
+    @media screen and (max-width: 375px){
+      .forex{
+        position:absolute;
+        top:20%;
+        left:-30px;
+        align-self: center;
+        height: 150px;
+        width: 100%;
+        padding:5px;
+        text-align: center;
+        border: 3px solid var(--blue);
+      }
+      #map {
+        height: 50%;
+        width: 100%;
+        position:absolute;
+        top:50%;
+        margin:2px;
+      }
+      .custom-jumbotron {
+        display:none;
+      }
+      .custom-navbar h1 {
+        font-size: 1.3em;
+    }
+      .custom-navbar a{
+        font-size:.8em;
+      }
+      #question{
+        font-size: 1em;
+      }
+      .country{
+        width:100px;
+        height:15px;
+      }
+      .to{
+        font-size: .8em;
+      }
+      label{
+        font-size: .8em;
+      }
+      #btn{
+        width:100px;
+      }
+    }
+
+    @media screen and (max-width: 1060px)(max-height:1440){
+      .forex{
+        position:absolute;
+        top:10%;
+        left:-30px;
+        align-self: center;
+        height: 150px;
+        width: 100%;
+        padding:5px;
+        text-align: center;
+        border: 3px solid var(--blue);
+      }
+      #map {
+        height: 50%;
+        width: 100%;
+        position:absolute;
+        top:50%;
+        margin:2px;
+      }
+      .custom-jumbotron {
+        display:none;
+      }
+      .custom-navbar h1 {
+        font-size: 1.3em;
+    }
+      .custom-navbar a{
+        font-size:.8em;
+      }
+      #question{
+        font-size: 1em;
+      }
+      .country{
+        width:100px;
+        height:15px;
+      }
+      .to{
+        font-size: .8em;
+      }
+      label{
+        font-size: .8em;
+      }
+      #btn{
+        width:100px;
+      }
+    }
