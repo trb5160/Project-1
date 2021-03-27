@@ -5,7 +5,8 @@ the pandemic is over.  So we created a website to help prospective travelers mak
 that they wish to travel to, as well as an amount of money they have available for the trip.  The website then converts that amount of money into the currency that the destination uses so the user knows how much they have on them.  Below this, we have a map displaying the year to date Covid-19 statistics so the user can see how the destination
 has been impacted by the pandemic.  These are the first two features that we have been able to upload into the website.  We currently have plans to add a functionality that looks for available flights to the destination, as well as more information about the destination such as places to eat, hotels to stay at, what the parking situation is, etc.
 
-![Alt text](/assets/website/website.png)
+![Alt text](/assets/website/mainpage.png)
+![Alt text](/assets/website/covidmap.png)
 
  Website Link: https://trb5160.github.io/Project-1/
 Repository Link: https://github.com/trb5160/Project-1.git
