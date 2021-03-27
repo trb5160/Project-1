@@ -2,14 +2,14 @@ var destinationEl = document.getElementById ("userDestination");
 var toCountryEl = document.querySelector ("#toCountry");
 var startAmountEl = document.getElementById ("startAmount");
 var endAmountEl = document.getElementById ("endAmount");
-var buttonEl = document.getElementById ("btn");
+var buttonEl = document.getElementById("btn");
 var fromCountryEl = document.querySelector("#fromCountry");
 var conversionEl = document.getElementById("conversion");
 var code;
 
 
 buttonEl.addEventListener("click", function(event){
-    event.preventDefault();
+    
 
     // function convertCountry(){
         fromCountryEl.textContent = "USA";
